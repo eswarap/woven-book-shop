@@ -1,8 +1,17 @@
 spring:
   application:
-  name: catalog-service
+    name: catalog-service
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      default-label: main
+      timeout: 5
+      clone-on-start: true
+      force-pull: true
 woven:
-  greeting: Welcome to woven book catalogs
+  greeting: Welcome to local woven book catalogs
 server:
   port: 9001
   tomcat:
