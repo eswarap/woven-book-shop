@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/eswarap/woven-book-shop/config-repo
+          uri: https://github.com/eswarap/config-repo
           default-label: main
 server:
   port: 8888
