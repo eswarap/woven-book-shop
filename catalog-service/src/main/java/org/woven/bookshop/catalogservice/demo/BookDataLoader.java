@@ -22,9 +22,9 @@ public class BookDataLoader {
     public void loadBookTestData() {
         bookRepository.deleteAll();
         var book1 = new Book(null,"1234567891", "Northern Lights",
-                "Lyra Silverstar", 9.90,null,null,0);
+                "Lyra Silverstar", 9.90,"Polarsophia",null,null,0);
         var book2 = new Book(null,"1234567892", "Polar Journey", "Iorek Polarson",
-                12.90,null,null,0);
+                12.90,"Polarsophia",null,null,0);
         bookRepository.saveAll(List.of(book1,book2));
     }
 }

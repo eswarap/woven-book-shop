@@ -17,7 +17,7 @@ class CatalogServiceApplicationTests {
 	@Test
 	void whenPostRequestThenBookCreated() {
 		var expectedBook = new Book(null,"1231231231","Title","Author",
-				90.0,null,null,0);
+				90.0,"Polarsophia",null,null,0);
 
 		webTestClient.post().uri("/books").bodyValue(expectedBook)
 				.exchange().expectStatus().isCreated()
