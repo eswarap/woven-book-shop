@@ -10,6 +10,16 @@ spring:
       timeout: 5
       clone-on-start: true
       force-pull: true
+  datasource:
+    username: user
+    password: password
+    url:  jdbc:posgresql://localhost:5432/wovendb_catalog
+    hikari:
+      connection-timeout: 2000
+      maximum-pool-size:  5
+  sql:
+    init:
+      mode: always
 woven:
   greeting: Welcome to local woven book catalogs
 server:

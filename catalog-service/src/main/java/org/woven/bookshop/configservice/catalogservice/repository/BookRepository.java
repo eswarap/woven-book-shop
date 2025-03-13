@@ -1,13 +1,19 @@
 package org.woven.bookshop.configservice.catalogservice.repository;
 
+import org.springframework.data.jdbc.repository.query.Modifying;
+import org.springframework.data.jdbc.repository.query.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
 import org.woven.bookshop.configservice.catalogservice.domain.Book;
 
 import java.util.Optional;
 
-public interface BookRepository {
-    Iterable<Book> findAll();
-    Optional<Book> findByIsbn(final String isbn);
-    boolean existsByIsbn(final String isbn);
-    Book save(final Book book);
-    void deleteByIsbn(final String isbn);
+public interface BookRepository extends CrudRepository<Book,Long> {
+    Optional<Book> findByIsbn(String isbn);
+    boolean existsByIsbn(String isbn);
+
+    @Modifying
+    @Transactional
+    @Query("delete from Book where isbn = :isbn")
+    void deleteByIsbn(String isbn);
 }

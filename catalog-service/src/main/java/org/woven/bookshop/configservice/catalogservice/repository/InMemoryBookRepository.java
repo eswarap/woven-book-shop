@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
-public class InMemoryBookRepository implements BookRepository {
+public abstract class InMemoryBookRepository implements BookRepository {
     private static final Map<String,Book> books = new ConcurrentHashMap<>();
     @Override
     public Iterable<Book> findAll() {
