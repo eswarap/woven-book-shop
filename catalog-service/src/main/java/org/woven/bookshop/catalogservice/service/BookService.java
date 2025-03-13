@@ -1,10 +1,10 @@
-package org.woven.bookshop.configservice.catalogservice.service;
+package org.woven.bookshop.catalogservice.service;
 
 import org.springframework.stereotype.Service;
-import org.woven.bookshop.configservice.catalogservice.domain.Book;
-import org.woven.bookshop.configservice.catalogservice.exception.BookAlreadyExistsException;
-import org.woven.bookshop.configservice.catalogservice.exception.BookNotFoundException;
-import org.woven.bookshop.configservice.catalogservice.repository.BookRepository;
+import org.woven.bookshop.catalogservice.domain.Book;
+import org.woven.bookshop.catalogservice.exception.BookAlreadyExistsException;
+import org.woven.bookshop.catalogservice.exception.BookNotFoundException;
+import org.woven.bookshop.catalogservice.repository.BookRepository;
 
 @Service
 public class BookService {

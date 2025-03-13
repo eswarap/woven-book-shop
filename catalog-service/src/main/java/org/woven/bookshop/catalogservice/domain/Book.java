@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.domain;
+package org.woven.bookshop.catalogservice.domain;
 
 import java.time.Instant;
 

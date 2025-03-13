@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.web;
+package org.woven.bookshop.catalogservice.web;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.woven.bookshop.configservice.catalogservice.exception.BookAlreadyExistsException;
-import org.woven.bookshop.configservice.catalogservice.exception.BookNotFoundException;
+import org.woven.bookshop.catalogservice.exception.BookAlreadyExistsException;
+import org.woven.bookshop.catalogservice.exception.BookNotFoundException;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.exception;
+package org.woven.bookshop.catalogservice.exception;
 
 public class BookAlreadyExistsException extends RuntimeException{
     public BookAlreadyExistsException(final String isbn) {

@@ -1,7 +1,7 @@
-package org.woven.bookshop.configservice.catalogservice.repository;
+package org.woven.bookshop.catalogservice.repository;
 
 import org.springframework.stereotype.Repository;
-import org.woven.bookshop.configservice.catalogservice.domain.Book;
+import org.woven.bookshop.catalogservice.domain.Book;
 
 import java.util.Map;
 import java.util.Optional;

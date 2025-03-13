@@ -13,7 +13,7 @@ spring:
   datasource:
     username: user
     password: password
-    url:  jdbc:posgresql://localhost:5432/wovendb_catalog
+    url:  jdbc:postgresql://localhost:5432/wovendb_catalog
     hikari:
       connection-timeout: 2000
       maximum-pool-size:  5

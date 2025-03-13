@@ -1,10 +1,10 @@
-package org.woven.bookshop.configservice.catalogservice.controller;
+package org.woven.bookshop.catalogservice.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.woven.bookshop.configservice.catalogservice.domain.Book;
-import org.woven.bookshop.configservice.catalogservice.service.BookService;
+import org.woven.bookshop.catalogservice.domain.Book;
+import org.woven.bookshop.catalogservice.service.BookService;
 
 @RestController
 @RequestMapping("books")

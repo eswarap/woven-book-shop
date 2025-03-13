@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.config;
+package org.woven.bookshop.catalogservice.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jdbc.repository.config.EnableJdbcAuditing;

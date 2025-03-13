@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.config;
+package org.woven.bookshop.catalogservice.config;
 
 import lombok.Data;
 import lombok.Getter;

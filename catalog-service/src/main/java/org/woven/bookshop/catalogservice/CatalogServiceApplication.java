@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice;
+package org.woven.bookshop.catalogservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

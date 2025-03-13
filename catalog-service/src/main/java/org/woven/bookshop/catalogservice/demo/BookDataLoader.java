@@ -1,11 +1,11 @@
-package org.woven.bookshop.configservice.catalogservice.demo;
+package org.woven.bookshop.catalogservice.demo;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
-import org.woven.bookshop.configservice.catalogservice.domain.Book;
-import org.woven.bookshop.configservice.catalogservice.repository.BookRepository;
+import org.woven.bookshop.catalogservice.domain.Book;
+import org.woven.bookshop.catalogservice.repository.BookRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.woven.bookshop.configservice.catalogservice.exception;
+package org.woven.bookshop.catalogservice.exception;
 
 public class BookNotFoundException extends RuntimeException{
     public BookNotFoundException(final String isbn) {
