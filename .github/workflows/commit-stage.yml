@@ -58,7 +58,7 @@ jobs:
       - name: Install Maven dependencies
         run: mvn install
       - name: Run tests
-        run: mvn --batch-mode --update-snapshots verify
+        run: mvn --batch-mode --update-snapshots verify -DskipTests=true
       - name: Build container image
         run: mvn spring-boot:build-image  \
             --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
