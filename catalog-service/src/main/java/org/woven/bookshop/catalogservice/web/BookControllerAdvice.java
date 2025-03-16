@@ -22,8 +22,8 @@ public class BookControllerAdvice {
 
     @ExceptionHandler(BookAlreadyExistsException.class)
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
-    String bookAlreadyExistsHandler(final BookNotFoundException bookNotFoundException) {
-        return bookNotFoundException.getMessage();
+    String bookAlreadyExistsHandler(final BookAlreadyExistsException bookAlreadyExistsException) {
+        return bookAlreadyExistsException.getMessage();
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
