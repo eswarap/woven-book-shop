@@ -48,7 +48,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 22
-          cache: mvn
+          cache: maven
       - name: Build container image
         run: |
           chmod +x mvnw
