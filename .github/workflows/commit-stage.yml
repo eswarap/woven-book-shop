@@ -18,7 +18,7 @@ jobs:
           architecture: x64
           cache: maven
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots verify package -DskipTests=true
+        run: mvn --batch-mode --update-snapshots package -DskipTests=true
       - name: Code vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
@@ -58,7 +58,7 @@ jobs:
       - name: Install Maven dependencies
         run: mvn install -DskipTests=true
       - name: Run tests
-        run: mvn --batch-mode --update-snapshots verify -DskipTests=true -D"spring.profiles.active"=integration
+        run: mvn --batch-mode --update-snapshots verify
       - name: Build container image
         run: mvn spring-boot:build-image  \
             --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
