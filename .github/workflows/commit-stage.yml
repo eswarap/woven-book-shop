@@ -49,9 +49,10 @@ jobs:
           distribution: temurin
           java-version: 22
           cache: maven
+      - name: Make maven executable
+        run: chmod +x mvnw
       - name: Build container image
-        run: |
-          chmod +x mvnw
+        run:    
           ./mvnw spring-boot:build-image  \
             --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
       - name: OCI image vulnerability scanning
