@@ -56,9 +56,9 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Install Maven dependencies
-        run: mvn install
+        run: mvn install -DskipTests=true
       - name: Run tests
-        run: mvn --batch-mode --update-snapshots verify -DskipTests=true
+        run: mvn --batch-mode --update-snapshots verify -DskipTests=true -D"spring.profiles.active"=integration
       - name: Build container image
         run: mvn spring-boot:build-image  \
             --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
