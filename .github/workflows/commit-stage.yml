@@ -3,7 +3,7 @@ on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: woven-book-shop/catalog-service
+  IMAGE_NAME: eswarap/catalog-service
   VERSION: latest
   
 jobs:
